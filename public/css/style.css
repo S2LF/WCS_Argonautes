@@ -40,6 +40,10 @@ label {
 
 .member-item {
   padding: 0.25em 0;
+
+  flex-grow: 1;
+  width: 33%;
+  text-align: center;
 }
 
 footer {
@@ -48,4 +52,11 @@ footer {
   color: #fff;
   background: #f76c6c;
   padding: 0.25em 0;
+}
+
+.member-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
