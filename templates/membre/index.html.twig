@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les Argonautes{% endblock %}
+
+{% block body %}
+
+
+  
+  <!-- Main section -->
+  <main>
+    
+    <!-- New member form -->
+    <h2>Ajouter un(e) Argonaute</h2>
+
+    
+    {{ form_start(form, {'attr': {'class':'new-member-form'}})}}
+
+       <p>
+            {{ form_row(form.name)}}
+
+            <input type="submit" value="Envoyer">
+            {{ form_end(form)}}
+       </p> 
+
+
+
+    <!-- Member list -->
+    <h2>Membres de l'équipage</h2>
+    <section class="member-list">
+        {% for membre in membres %}
+            <div class="member-item">{{ membre.name }}</div>
+        {% endfor %}
+    </section>
+  </main>
+  
+
+
+
+{% endblock %}
