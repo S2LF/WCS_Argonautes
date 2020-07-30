@@ -60,7 +60,9 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
-.logo {
+.center{
     text-align: center;
+}
+.logo {
+    width: 300px;
 }
